@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Gra w zapałki</title>
+</head>
+
+<body>
+  <h1>Gra w zapałki</h1>
+  <button class="rules" onclick="rules()">Pokaż reguły gry</button>
+  <div class="game">
+    <div class="player player1 active">
+      <h3 id="nick1"></h3>
+      <div class="matches">
+        <div class="btn one">
+          <img src="match.png" alt="">
+        </div>
+        <div class="btn two">
+          <img src="match.png" alt="">
+          <img src="match.png" alt="">
+        </div>
+        <div class="btn three">
+          <img src="match.png" alt="">
+          <img src="match.png" alt="">
+          <img src="match.png" alt="">
+        </div>
+      </div>
+      <p>Ilość pobranych zapałek: <span class="matchesTaken1">0</span></p>
+      <p>Zostało zapałek: <span class="matchesLeft"></span></p>
+    </div>
+    <div class="table">
+    </div>
+    <div class="player player2">
+      <h3 id="nick2"></h3>
+      <div class="matches">
+        <div class="btn one">
+          <img src="match.png" alt="">
+        </div>
+        <div class="btn two">
+          <img src="match.png" alt="">
+          <img src="match.png" alt="">
+        </div>
+        <div class="btn three">
+          <img src="match.png" alt="">
+          <img src="match.png" alt="">
+          <img src="match.png" alt="">
+        </div>
+      </div>
+      <p>Ilość pobranych zapałek: <span class="matchesTaken2">0</span></p>
+      <p>Zostało zapałek: <span class="matchesLeft"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

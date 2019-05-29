@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background-color: #A6C4E0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 30px;
+  color: rgb(43, 67, 97);
+}
+
+button {
+  background-color: #6F9ABC;
+  border: 3px dashed rgb(25, 40, 58);
+  padding: 15px 25px;
+  font-size: 25px;
+  color: rgb(25, 40, 58);
+  font-weight: bold;
+}
+
+.game {
+  display: flex;
+  width: 100%;
+  height: 400px;
+  margin: 50px 0;
+}
+
+.player1 {
+  flex-basis: 25%;
+}
+
+.table {
+  flex-basis: 50%;
+  border: 3px dashed rgb(25, 40, 58);
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 20px;
+}
+
+.table img {
+  width: 2%;
+  height: 33%;
+}
+
+.player2 {
+  flex-basis: 25%;
+}
+
+.player1 .matches>*,
+.player2 .matches>* {
+  cursor: pointer;
+}
+
+.player1,
+.player2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+  /* background-color: rgba(98, 100, 97, 0.493); */
+}
+
+.matches {
+  height: 50%;
+  width: 90%;
+  display: flex;
+
+}
+
+.matches div {
+  flex-basis: 30%;
+  margin: 5px;
+  border: 3px dashed rgb(25, 40, 58);
+}
+
+.matches img {
+  height: 100%;
+  width: 25%
+}
+
+.active {
+  background-color: rgba(119, 223, 60, 0.493);
+}
